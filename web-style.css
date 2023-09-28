@@ -1,0 +1,201 @@
+/* General settings for the whole page */
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+*{
+    box-sizing: border-box;
+    color: #777;
+    font-family: 'Abel', sans-serif;
+}
+/* necessary things for having 0 margins and the first element */
+html,body{
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    width: 100%;
+}
+
+/* The header part and the navigation menu */
+.nav ul{
+    margin: 0px;
+}
+
+.nav li{
+    display: inline;
+}
+
+.nav a{
+    display: inline-block;
+    padding: 1em;
+    text-decoration: none;
+    font-size: 1.125em;
+    color: #888;
+}
+
+.nav a:hover{
+    color: #fff;
+    background-color: rgba(255,255,255,.3);
+}
+
+.main-nav ul{
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+
+.main-header{
+    background-image: url('Astroimages/Dawn-of-the-night.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0,0,0,.3);
+    background-blend-mode: multiply;
+}
+
+.main-heading{
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.main-heading .brand-name{
+    padding-top: .4em;
+    text-align: center;
+    font-size: 4em;
+    margin-bottom: .5em;
+}
+
+.brand-name{
+    color: rgba(255,255,255,.95);
+}
+
+.caption{
+    margin-top: 0px;
+    padding: 0 0 0 75%;
+    font-size: 1.25em;
+    color: #ddd;
+}
+
+
+@media (min-width: 1000px){
+    .main-header{
+        height: 20em;
+    }
+    .main-heading{
+        background-color: rgba(0,0,0,.65);
+        margin-bottom: 1em;
+    }
+    .caption{
+        color: white;
+        font-size: 1.6em;
+    }
+}
+
+/* footer part */
+.end-credit {
+    background-color: rgba(0,0,0,.85);
+    margin: 0px;
+}
+.end-credit h2{
+    color: rgb(218, 218, 218);
+    text-align: center;
+}
+.end-credit i{
+    display: inline-block;
+    margin: 0 .32em;
+}
+.end-credit i,.end-credit cite{
+    color: white;
+}
+.icons{
+    text-align: center;
+    margin: 1.5em 0;
+}
+.email{
+    margin:0px;
+    text-align: center;
+}
+.end-credit b{
+    color: #ddd;
+    margin-right: .5em
+}
+
+/* gallery part */
+.container{
+    width: 90%;
+    margin: 30px 70px;
+    padding: 25px;
+}
+.article h2{
+    font-size: 2.2em;
+    color: #111;
+    border-bottom: 2px solid black;
+
+}
+.article p{
+    font-size: 1.3em;
+}
+.gallery{
+    background-color: #111;
+    box-shadow: 0px 0px 5px black;
+}
+.gallery img{
+    display: block;
+    margin: 10px;
+    max-width: 300px;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+.gallery h2{
+    display: inline;
+    border-bottom: 1px solid #fff;
+    font-size: 1.7em;
+    color: #fff;
+    
+}
+.flex-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    height: 100%;
+    width: 90%;
+    margin: 7px auto;
+}
+.landscape{
+    min-width: 500px;
+}
+
+.btn{
+    font-size: 1.5em;
+    color: rgba(255, 255, 255, 0.89);
+    background-color: rgba(17, 17, 17, 0.842);
+    border: 1px solid white;
+    border-radius: 0;
+    margin: 1em;
+    padding: .5em;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #333;
+    color: white;
+}
+
+.btn-display{
+    text-align: center;
+}
+
+@media (max-width: 1270px){
+    .flex-container{
+        align-content: space-around;
+    }
+}
+
+.grid-container{
+    grid-template-columns: auto auto auto;
+    display: grid;
+}
+
+.item-1{
+    grid-column: 1/ span 2;
+}
+.item-2{
+    grid-column: 3/ span 2;
+}

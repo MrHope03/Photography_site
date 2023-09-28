@@ -1,0 +1,12 @@
+.gallery{
+    position: relative;
+}
+.img-box{
+    box-shadow: 2px 2px 5px black;
+    width: 300px;
+    margin: 5px;
+    float: left;
+    vertical-align: top;
+}
+
+
